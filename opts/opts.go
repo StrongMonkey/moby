@@ -335,7 +335,7 @@ func ParseGenericResources(value string) ([]swarm.GenericResource, error) {
 		return nil, nil
 	}
 
-	resources, err := genericresource.Parse(value)
+	resources, err := genericresource.Parse([]string{value})
 	if err != nil {
 		return nil, err
 	}

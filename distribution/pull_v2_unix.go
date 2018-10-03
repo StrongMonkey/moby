@@ -3,8 +3,9 @@
 package distribution
 
 import (
+	"context"
+
 	"github.com/docker/distribution"
-	"github.com/docker/distribution/context"
 )
 
 func (ld *v2LayerDescriptor) open(ctx context.Context) (distribution.ReadSeekCloser, error) {
